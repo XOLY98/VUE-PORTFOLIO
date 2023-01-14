@@ -81,5 +81,16 @@ button{
     transform: translateY(0%);
   }
 }
+@media screen and (min-width: 300px) and (max-width:719px){
+  .pop-outin{
+    font-size: 1rem;
+  }
+  .lineUp{
+    font-size:1rem;
+  }
+}
+
+  
+
 
 </style>

@@ -8,6 +8,11 @@
       <router-link to="/contact">Contact</router-link>|
        <router-link to="/testimonial">Testimonials</router-link>|
         <router-link to="/projects">Projects</router-link>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
   </nav>
   <router-view/>
   
@@ -54,6 +59,15 @@ nav img{
   justify-content:left;
 }
 
+@media  screen and(min-width:300px) and (max-width: 719px) {
+  .hamburger {
+      background-color: #fff;
+      width: 10%;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+}
 
 
 </style>

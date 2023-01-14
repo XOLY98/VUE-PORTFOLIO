@@ -43,9 +43,22 @@ export default {
 }
 ul{
     list-style: none;
+
 }
 ul li{
     color:pink;
+}
+@media screen and (min-width: 300px) and (max-width:719px){
+    .para{
+        font-size:0.5rem;
+        
+    }
+    .img{
+       scale:0.5;
+    }
+    .ul{
+        font-size:0.5rem;
+    }
 }
 
 

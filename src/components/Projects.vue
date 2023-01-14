@@ -12,6 +12,15 @@
   </div>
 </div>
 </div>
+<div>
+      <ul>
+       <li>NAME: XOLELWA MANQINA</li>
+       <li>AGE: 24 YEARS OLD</li>
+       <li><i class="fa-sharp fa-solid fa-house"></i>  ADDRESS: 1028 NOMTHANDAZO STR,<br> NEWCROSS ROADS, NYANGA, 7750</li>
+       <li><i class="fa-sharp fa-solid fa-phone"></i>  PHONE: 084 0750 691</li>
+       <li><i class="fa-sharp fa-solid fa-envelope"></i>  EMAIL: manqinaxolelwa98@gmail.com</li>
+      </ul>
+      </div>
    
             
 </template>
@@ -56,11 +65,21 @@ export default {
 </script>
 <style scoped>
    .proj{
-   margin-top:80px;
-   } 
-   .card{
-    background-image:linear-gradient(grey,pink)
+   margin-top:100px;
    }
+   .card{
+       background-image:linear-gradient(pink,#A865C9);
+      animation: 2s anim-card ease-out infinite;
+     }
+   @keyframes anim-card {
+      0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+     
+    } 
+   
+   
    .btn{
 background-color:black;
 color:white;
@@ -72,4 +91,20 @@ color:white;
     text-underline-position: under;
     text-align:center;
    }
+   ul{
+      list-style: none;
+      margin-top: 100px;
+      margin-bottom:0;
+  }
+  ul li{
+      color:white;
+  }
+  @media screen  and(min-width: 300px) and (max-width:719px){
+   .card{
+      width:1rem;
+   }
+   ul{
+      font-size: 1rem;
+   }
+  }
 </style>

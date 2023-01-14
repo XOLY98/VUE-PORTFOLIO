@@ -7,13 +7,12 @@
               <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
               <div>
               <a href="https://www.facebook.com/xolelwa.manqina.92"><i class="fa fa-facebook fa-bounce"
-               style="--fa-bounce-scale-x:1;
-               --fa-bounce-scale-y:1;
-               --fa-bounce-scale-x:1;
-               --fa-bounce-scale-y:1;
-               --fa-bounce-rebound:0;"
-               ></i>
-               </a>
+                style="--fa-bounce-scale-x:1;
+                --fa-bounce-scale-y:1;
+                --fa-bounce-scale-x:1;
+                --fa-bounce-scale-y:1;
+                --fa-bounce-rebound:0;"
+                ></i>               </a>
                <a href="https://github.com/XOLY98"><i class="fa fa-github fa-bounce"
                style="--fa-bounce-scale-x:1;
                --fa-bounce-scale-y:1;

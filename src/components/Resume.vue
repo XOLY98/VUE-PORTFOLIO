@@ -1,71 +1,41 @@
 <template>
   <h1>RESUME</h1>
-<section style="background-color: #F0F2F5;">
+
   <div class="container py-5">
     <div class="main-timeline">
-      <div class="timeline left">
+      <div class="timeline left" v-for="item in skills" :key="item">
         <div class="card">
           <div class="card-body p-4">
-            <h3>2017</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.</p>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h4 class="heading">{{item.name}}</h4>
+            <p class="mb-0">{{item.percentage}}</p>
           </div>
         </div>
       </div>
-      <div class="timeline right">
+      <div class="timeline right" v-for="item in education" :key="item">
         <div class="card">
           <div class="card-body p-4">
-            <h3>2016</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.</p>
+            <i class="fa-sharp fa-solid fa-book"></i>
+            <h4 class="heading">{{item.name}}</h4>
+            <li class="mb-0">{{item.year}}</li>
+            <li class="mb-0">{{item.position}}</li>
           </div>
         </div>
       </div>
-      <div class="timeline left">
+      <div class="timeline left" v-for="item in experience" :key="item">
         <div class="card">
           <div class="card-body p-4">
-            <h3>2015</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline right">
-        <div class="card">
-          <div class="card-body p-4">
-            <h3>2012</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline left">
-        <div class="card">
-          <div class="card-body p-4">
-            <h3>2011</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline right">
-        <div class="card">
-          <div class="card-body p-4">
-            <h3>2007</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-              mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.</p>
+            <i class="fa-sharp fa-solid fa-briefcase"></i>
+            <h4 class="heading">{{item.companyName}}</h4>
+            <li class="mb-0">{{item.position}}</li>
+            <li class="mb-0">{{item.period}}</li>
+            <li class="mb-0">{{item.refrence}}</li>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+
  
           
 </template>
@@ -143,7 +113,7 @@ h1{
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #939597;
+  background-color: #A865C9;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -248,6 +218,10 @@ h1{
   .right {
     left: 0%;
   }
+}
+.card-body{
+  background-color: black;
+  color: white;
 }
 
 </style>

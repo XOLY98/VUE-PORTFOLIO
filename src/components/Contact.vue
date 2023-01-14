@@ -114,5 +114,17 @@ ul {
     width:300px;
     height:100px
 }
+@media screen  and(min-width: 300px) and (max-width:719px){
+  div  {
+  height:5%;
+  width:2%;
+  margin-left: 0 !important;
+ 
+}
+input{
+  width: 2%;
+}
+}
+
     
 </style>

@@ -6,7 +6,7 @@
   <img :src="item.image" class="card-img-top rounded-circle" alt="">
   <div class="card-body">
     <h6 class="card-title">{{item.name}}</h6>
-    <h6 class="company">{{item.company}}</h6>
+    <h6 class="company"><i class="fa-solid fa-laptop-code"></i> {{item.company}}</h6>
     <p class="message">{{item.message}}</p>
   </div>
 </div>
@@ -96,7 +96,7 @@ h1{
 }
 .message{
     color:white;
-    margin-top:50px;
+    margin-top:25px;
 }
 .company{
     color:#A865C9;
